@@ -1,0 +1,21 @@
+nav {
+    position: relative;
+    float: right;
+    padding: 12px 2px;
+    z-index: 1000;
+    ul {
+        list-style-type: none;
+        li {
+            float: left;
+            margin-right: 12px;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 20px;
+            a {
+                text-decoration: none;
+                padding: 0 13px;
+                color: #333;
+            }
+        }
+    }
+}

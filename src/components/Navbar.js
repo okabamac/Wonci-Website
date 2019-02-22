@@ -3,10 +3,10 @@ import React from 'react';
 const Navbar  = () => (
     <nav>
         <ul>
-            <li href='#'>Home</li>
-            <li href='#'>Gallery</li>
-            <li href='#'>Press</li>
-            <li href='#'>Contact</li>
+            <li><a href ='#'> Home </a></li >
+            <li><a href='#'>Gallery</a></li>
+            <li><a href='#'>Press</a></li>
+            <li><a href='#'>Contact</a></li>
         </ul>
     </nav>
 );
