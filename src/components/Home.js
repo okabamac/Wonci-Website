@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import drippingChocolate from '../images/chocolatedrip.svg';
+import caramel from '../images/chocolatedrip.svg';
 
-export default class Home extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
     }
     render(){
         return (
-            <div className='Home'>
-            <div className='chocolate'>
-            <img src={drippingChocolate} alt='Dripping Chocolate'/>
+            <div className='Home' style={{width: this.props.width>970 && '970px'}}>
+            <div className='title'>
+            <h2>Bee's Treats</h2>
+            <p>We speak standard</p>
             </div>
-            <div className='content'>
-            <h1>You-jay's Treats</h1>
+            <div className='home-cake'>
+            
             </div>
             </div>
         )
     }
 }
+export default Home;

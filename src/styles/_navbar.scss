@@ -1,22 +1,46 @@
-
+@import 'config';
 nav {
     position: relative;
-    float: right;
-    padding: 12px 2px;
+    top: 22px;
+    height: calc(100vh - 88px);
+    padding: 0;
+    margin:  0 auto;
     z-index: 1000;
+    background-color: transparent;
+   
     ul {
+        display: none;
         list-style-type: none;
+        padding: 15px 30px;
+        height: inherit;
+        background-color: rgb(197, 85, 5);
         li {
-            float: left;
-            margin-right: 12px;
+            margin: 30px 0;
             font-size: 1em;
             font-weight: 600;
             line-height: 20px;
             a {
                 text-decoration: none;
-                padding: 0 13px;
                 color: #333;
             }
         }
+       
     }
+   .horizontal {
+       display: block;
+       background-color: transparent;
+       float: right;
+       margin-right: 0;
+
+       li {
+           float: left;
+           margin-right: 1em;
+           &:last-child {
+               margin-right: 0;
+           }
+       }
+   }
+}
+#open {
+    display: block;
 }

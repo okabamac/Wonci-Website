@@ -1,23 +1,66 @@
+@import 'config';
+
 .Home {
     position: absolute;
-    width: 100%;
-    padding: 0;
+    top: 20px;
+    text-align: center;
+    width: 100vw;
+    padding: 200px 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: $box-shadow;
+    line-height: 0;
+    .title{
+        font-family: 'Parisienne', cursive;
+          h2 {
+              font-size: 4em;
+          }
+          p {
+               font-size: 1.5em;
+          }
+
+    }
+    .home-cake {
+        display: grid;
+        
+    }
+   
 }
 
-.chocolate {
-    position: relative;
-    top: -73px;
-    left: -64px;
+.header-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 62px;
+    max-width: 970px;
+    height: 500px;
+
+    .chocolate {
+        position: absolute;
+        top: -15%;
+        left: -6.5%;
+    }
+
 }
-.content {
-  position: relative; 
-  top: -210px;
-  height: 80%;
-  width: 95%;
-  margin: 0 auto;
-  text-align: center;
-   h1 {
-   font-size: 5em;
-   font-family: 'Parisienne', cursive;
-   } 
-}
+
+
+// .content {
+//   position: relative; 
+//   top: -80px;
+//   height: 80%;
+//   width: 95%;
+//   margin: 0 auto;
+//   text-align: center;
+//    h1 {
+//    font-size: 4em;
+//    font-family: 'Parisienne', cursive;
+//    } 
+//    img {
+//        width: 330px;
+//        height: 330px;
+//    }
+// }
