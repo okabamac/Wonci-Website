@@ -4,27 +4,40 @@ class MediaQuery extends Component {
   constructor(props){
     super(props);
     this.state = {
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      position: null
     };
-    this.updateState = this.updateState.bind(this);
+    this.updateWidth = this.updateWidth.bind(this);
+    this.updatePosition = this.updatePosition.bind(this);
   }
-  updateState(e){
+  updateWidth(e){
     this.setState({
       windowWidth: window.innerWidth
     });
   }
+  updatePosition(e) {
+   const top = window.scrollY;
+    this.setState({
+      position: top
+    });
+  }
 componentDidMount (){
-    window.addEventListener('resize', this.updateState);
+    window.addEventListener('resize', this.updateWidth);
+    window.addEventListener('scroll', this.updatePosition);
 }
 componentWillUnmount(){
-    window.removeEventListener('resize', this.updateState);
+    window.removeEventListener('resize', this.updateWidth);
+    window.removeEventListener('scroll', this.updatePosition);
 }
-  render() {
-    return (
-      <div>
-        {this.props.children(this.state.windowWidth)}
-      </div>
-    )
-  }
+   render() {
+     const {
+       children
+     } = this.props;
+     return children({
+       windowWidth: this.state.windowWidth,
+       position: this.state.position,
+     });
+
+   }
 }
 export default MediaQuery;

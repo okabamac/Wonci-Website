@@ -1,19 +1,23 @@
 @import 'config';
+.Navigation {
+    max-width: 970px;
+    margin: auto;
+}
 nav {
-    position: relative;
-    top: 22px;
-    height: calc(100vh - 88px);
+    position: fixed;
+    top: 18px;
+    height: 100%;
     padding: 0;
     margin:  0 auto;
+    width: 100vw;
     z-index: 1000;
-    background-color: transparent;
    
     ul {
         display: none;
         list-style-type: none;
         padding: 15px 30px;
         height: inherit;
-        background-color: rgb(197, 85, 5);
+        background-color: #009688;
         li {
             margin: 30px 0;
             font-size: 1em;
@@ -21,7 +25,7 @@ nav {
             line-height: 20px;
             a {
                 text-decoration: none;
-                color: #333;
+                color:white;
             }
         }
        
@@ -29,15 +33,29 @@ nav {
    .horizontal {
        display: block;
        background-color: transparent;
-       float: right;
        margin-right: 0;
+       height: 90px;
+       float: right;
 
        li {
            float: left;
-           margin-right: 1em;
+           margin-right: 1.4em;
            &:last-child {
                margin-right: 0;
            }
+           a {
+               color: #333;
+           }
+       }
+   }
+   .show-horizontal {
+       background: #009688;
+       li {
+           a {
+            color: white;
+            padding-bottom: 1rem;
+           }
+        
        }
    }
 }

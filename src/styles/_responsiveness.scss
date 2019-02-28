@@ -9,9 +9,41 @@
 
 //Tablets amd small laptops
 @include mediaMd {
+.wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.7fr));
+    grid-template-rows: repeat(3, 160px);
+
+    .item1,
+    .item2,
+    .item3 {
+        grid-column: 1 / 20;
+    }
+
+    .item3 {
+        grid-template-columns: repeat(2, minmax(50px, 0.7fr));
+        grid-template-rows: repeat(2, 140px);
+    }
+
+
+}
+
 }
 
 //Smartphones 
 @include mediaSm {
+     .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 0.7fr));
+        grid-template-rows: repeat(3, 160px);  
 
-}
+          .item1, .item2, .item3 {
+              grid-column: 1 / 20;
+          }
+          .item3 {
+               grid-template-columns: repeat(2, minmax(50px, 0.7fr));
+               grid-template-rows: repeat(2, 140px);
+          }
+           
+         
+     }
+
+}  
