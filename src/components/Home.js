@@ -1,41 +1,40 @@
-import React, { Component } from 'react';
+import React from 'react';
+import MediaQuery from './MediaQuery';
 import cherish from '../images/cherish.jpg';
 import pablo1 from '../images/pablo(1).jpg';
 import pablo2 from '../images/pablo(2).jpg';
-import pablo3 from '../images/pablo(3).jpg';
 import pablo4 from '../images/pablo(4).jpg';
 import pablo5 from '../images/pablo(5).jpg';
 import pablo6 from '../images/pablo(6).jpg';
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render(){
-        return (
-            <div className='Home' style={{width: this.props.width>970 && '970px'}}>
+const Home = () => (
+            <div>
+                 <MediaQuery>
+        {({windowWidth}) =>
+              <div>
+                   <div className='Container' style={{width: windowWidth>970 && '970px'}}>
             <div className='title'>
             <h2>Bee's Treats</h2>
             <p>We speak standard</p>
             <hr className="hr" />
             </div>
             <div className="wrapper">
-    <div className="box item1"><img src={pablo1} alt='Image' /></div>
-    <div className="box item2"><img src={pablo2} alt='Image' /></div>
+    <div className="box item1"><img src={pablo1} alt='Cake' /></div>
+    <div className="box item2"><img src={pablo2} alt='Cake' /></div>
     <div className="item3">
-    <div className="box small-item1"><img src={cherish} alt='Image' /></div>
-    <div className="box small-item2"><img src={pablo4} alt='Image' /></div>
-    <div className="box small-item3"><img src={pablo5} alt='Image' /></div>
-    <div className="box small-item4"><img src={pablo6} alt='Image' /></div>
+    <div className="box small-item1"><img src={cherish} alt='Cake' /></div>
+    <div className="box small-item2"><img src={pablo4} alt='Cake' /></div>
+    <div className="box small-item3"><img src={pablo5} alt='Cake' /></div>
+    <div className="box small-item4"><img src={pablo6} alt='Cake' /></div>
     </div>
 </div>
 
-<div className='about' style={{gridTemplateColumns: this.props.width <=970 && '1fr', padding: this.props.width<=600 && '1.4rem'}}>
+<div className='about' style={{gridTemplateColumns: windowWidth <=970 && '1fr', padding: windowWidth<=600 && '1.4rem'}}>
 < div className = 'vl'
 style = {
     {
-        borderBottom: this.props.width <= 970 && '2px solid #664840',
-        borderRight: this.props.width <= 970 && 'none'
+        borderBottom: windowWidth <= 970 && '2px solid #664840',
+        borderRight: windowWidth <= 970 && 'none'
     }
 } >
 <h3>About Us</h3>
@@ -45,9 +44,9 @@ style = {
     </div>
 <div>
     <h3>We Deliver</h3>
-    <div class='services'>
+    <div className='services'>
      <span>
-            <i class="material-icons">
+            <i className="material-icons">
                 flip_to_front
             </i>
             </span>
@@ -55,9 +54,9 @@ style = {
                 ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
-    <div class='services'>
+    <div className='services'>
      <span>
-            <i class="material-icons">
+            <i className="material-icons">
                 flip_to_front
             </i>
             </span>
@@ -65,9 +64,9 @@ style = {
                 ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
-    <div class='services'>
+    <div className='services'>
      <span>
-            <i class="material-icons">
+            <i className="material-icons">
                 flip_to_front
             </i>
             </span>
@@ -75,9 +74,9 @@ style = {
                 ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
-    <div class='services'>
+    <div className='services'>
      <span>
-            <i class="material-icons">
+            <i className="material-icons">
                 flip_to_front
             </i>
             </span>
@@ -88,7 +87,9 @@ style = {
 </div>
 </div>
             </div>
+                  </div>
+        }
+        </MediaQuery>
+             </div>
         )
-    }
-}
 export default Home;

@@ -1,8 +1,10 @@
 import React from 'react'
 import MediaQuery from './MediaQuery';
 import Toggle from './Toggle';
-import Home from './Home';
 import header from '../images/header.svg';
+import {
+  NavLink
+} from 'react-router-dom';
 const Hero = () => (
     <div>
         <MediaQuery>
@@ -12,7 +14,7 @@ const Hero = () => (
                         {({on, toggle}) => (
                         <div>
                           <header>
-                            <div classsName='header-div' style={{width: windowWidth>970 && '970px', margin: 'auto'}}>
+                        <div classsName='header-div' style={{width: windowWidth>970 && '970px', margin: 'auto'}}>
                         <p>Bee's Treats</p>
                         <div onClick={toggle} className={"hamburger-icon "+ (on && 'close')} id={"" + (windowWidth >970 && "hide")}>
                         <div className="btn-line line-1"></div>
@@ -24,10 +26,10 @@ const Hero = () => (
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px'}}>
             <ul  className={" " + (windowWidth >970 && 'horizontal '+(position>70 && 'show-horizontal'))} id={""+(on && "open")}>
-            <li><a href ='#'> Home </a></li >
-            <li><a href='#'>Gallery</a></li>
-            <li><a href='#'>Press</a></li>
-            <li><a href='#'>Contact</a></li>
+            <li><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid chocolate' }}>Home</NavLink></li >
+            <li><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid chocolate' }}>Gallery</NavLink></li>
+            <li><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid chocolate' }}>Press</NavLink></li>
+            <li><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid chocolate' }}>Contact</NavLink></li>
          </ul>
        </nav>
        </div>
@@ -36,9 +38,7 @@ const Hero = () => (
               </div> 
       </div>
                       )} 
-                        </Toggle>
-                        <Home width={windowWidth} />
-                       
+                        </Toggle>                  
                   </div>
           }
         </MediaQuery>

@@ -1,6 +1,6 @@
 @import 'config';
 
-.Home {
+.Container {
     position: absolute;
     top: 10px;
     text-align: center;
@@ -11,7 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: $box-shadow;
-    line-height: 0;
+    line-height: 1;
     background: #fff;
 
     .title {
