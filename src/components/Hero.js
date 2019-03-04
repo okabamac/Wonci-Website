@@ -8,17 +8,18 @@ const Hero = () => (
         <MediaQuery>
         {({windowWidth, position}) =>
               <div>
-                
                       <Toggle>
                         {({on, toggle}) => (
                         <div>
                           <header>
-              <p style={{ paddingLeft: windowWidth > 970 && '20%' }} >Bee's Treats</p>
+                            <div classsName='header-div' style={{width: windowWidth>970 && '970px', margin: 'auto'}}>
+                        <p>Bee's Treats</p>
                         <div onClick={toggle} className={"hamburger-icon "+ (on && 'close')} id={"" + (windowWidth >970 && "hide")}>
                         <div className="btn-line line-1"></div>
                         <div className="btn-line line-2"></div>
                         <div className="btn-line line-3"></div>
                         </div>
+                  </div>
               </header>
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px'}}>
