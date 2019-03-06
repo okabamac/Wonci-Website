@@ -46,4 +46,15 @@
          
      }
 
+     .contact form {
+         grid-template-columns: 1fr;
+
+         .textarea {
+             grid-column: 1;
+         }
+         .btn-div {
+             grid-column: 1;
+         }
+     }
+
 }  

@@ -3,7 +3,6 @@
 .Container {
     position: absolute;
     top: 10px;
-    text-align: center;
     width: 100vw;
     padding: 200px 0 0 0;
     left: 0;
@@ -12,10 +11,12 @@
     margin-right: auto;
     box-shadow: $box-shadow;
     line-height: 1;
+    text-align: center;
     background: #fff;
 
     .title {
         font-family: 'Parisienne', cursive;
+        text-align: center;
 
         h2 {
             font-size: 3.5em;
@@ -135,17 +136,100 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 62px;
+    top: 40px;
     max-width: 970px;
-    height: 500px;
+    height: 320px;
+    z-index: 1;
 
     .chocolate {
         position: absolute;
-        top: -15%;
-        left: -6.5%;
-        z-index: 999;
+        top: -16.3%;
+        left: -6.7%;
+        z-index: 1;
     }
+    
+}
+.contact {
+    position: relative;
+    width: 100%;
+    top: 60px;
+    padding: 4em;
 
+    h2 {
+        text-align: left;
+        top: 5em;
+        margin-left: .75em; 
+        margin-bottom: 1.5em;
+    }
+    form {
+        display: grid;
+        grid-gap: 2em;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        div {
+            position: relative;
+            margin-bottom: 1em;
+        }
+        input {
+            width: 90%;
+            height: 40px;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: 1.3em;
+            transition: all 200ms;
+            opacity: 0.5;
+        }
+        .textarea {
+            grid-column: 1/ span 2;
+            textarea {
+                width: 95%;
+                height: 10em;
+            }
+        }
+        input, textarea {
+            padding: 1em 0 0 .3em;
+            border: none;
+            border-bottom: solid 0.1em #684841;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #684841 4%);
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-bottom: 0.5em solid chocolate;
+            }
+        }
+        .btn-div {
+            grid-column: 1/ span 2;
+            text-align: left;
+            padding-left: 1.3em;
+            margin-top: -20px;
+            button {
+                color: white;
+                cursor: pointer;
+                border: none;
+                border-radius: 3px;
+                width: 50%;
+                height: 40px;
+                background-color: #684841;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        
+
+        input:focus + label, textarea:focus + label, input:valid + label {
+            transform: translate3d(0, -100%, 0);
+            opacity: 1;
+            font-size: 120%;
+        }
+    }
 }
 
 

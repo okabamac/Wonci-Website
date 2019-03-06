@@ -12,9 +12,9 @@
                                     <path fill="#FFF" d="M86.225 161l62.226 62.225-62.226 62.225L24 223.225zM296 176h80v160h-80z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
                                     <path fill="#FFF" d="M86.225 161l62.226 62.225-62.226 62.225L24 223.225zM296 176h80v160h-80z"/>
                                     <path fill="#FFF" d="M245.092 218l9.378 22.092-22.093 9.378L223 227.378z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
-                                    <path fill="#02C6A4" d="M245.092 218l9.378 22.092-22.093 9.378L223 227.378z"/>
+                                    <path fill="#684841" d="M245.092 218l9.378 22.092-22.093 9.378L223 227.378z"/>
                                     <path fill="#FFF" d="M270 96H170v100z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
-                                    <path fill="#84E482" d="M270 96H170v100z"/>
+                                    <path fill="#0EB3CE" d="M270 96H170v100z"/>
                                     <circle fill="#FFF" cx="296" cy="177" r="32" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
-                                    <circle fill="#0EB3CE" cx="296" cy="177" r="32" style="mix-blend-mode:multiply"/>
+                                    <circle fill="chocolate" cx="296" cy="177" r="32" style="mix-blend-mode:multiply"/>
                                 </svg>

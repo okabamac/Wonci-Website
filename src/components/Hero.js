@@ -24,16 +24,16 @@ const Hero = () => (
                   </div>
               </header>
               <div className='Navigation'>
-                   <nav style={{width: windowWidth>970 && '970px'}}>
-            <ul  className={" " + (windowWidth >970 && 'horizontal '+(position>70 && 'show-horizontal'))} id={""+(on && "open")}>
-            <li><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid chocolate' }}>Home</NavLink></li >
-            <li><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid chocolate' }}>Gallery</NavLink></li>
-            <li><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid chocolate' }}>Press</NavLink></li>
-            <li><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid chocolate' }}>Contact</NavLink></li>
+                   <nav style={{width: windowWidth>970 && '970px', height: windowWidth>970 && '100px'}}>
+            <ul  className={" " + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={""+(on && "open")}>
+            <li><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Home</NavLink></li >
+            <li><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Gallery</NavLink></li>
+            <li><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Press</NavLink></li>
+            <li><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Contact</NavLink></li>
          </ul>
        </nav>
        </div>
-              <div className='header-image' style={{top: windowWidth <= 698 && '83px' }}>
+              <div className='header-image' style={{top: windowWidth <= 698 && '57px' }}>
                 <img src={header} alt='Dripping chocolate' className='chocolate' style={{ width: windowWidth <= 970 && '120vw', top: windowWidth <= 970 && '-15%' }} />
               </div> 
       </div>

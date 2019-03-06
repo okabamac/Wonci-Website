@@ -14,7 +14,7 @@ export default class Toggle extends Component {
     return children ({
           on: this.state.on,
           toggle: this.toggle
-        });
+        })
 
   }
 }

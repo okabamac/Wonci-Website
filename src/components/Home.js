@@ -22,10 +22,10 @@ const Home = () => (
     <div className="box item1"><img src={pablo1} alt='Cake' /></div>
     <div className="box item2"><img src={pablo2} alt='Cake' /></div>
     <div className="item3">
-    <div className="box small-item1"><img src={cherish} alt='Cake' /></div>
-    <div className="box small-item2"><img src={pablo4} alt='Cake' /></div>
-    <div className="box small-item3"><img src={pablo5} alt='Cake' /></div>
-    <div className="box small-item4"><img src={pablo6} alt='Cake' /></div>
+    <div className="box"><img src={cherish} alt='Cake' /></div>
+    <div className="box"><img src={pablo4} alt='Cake' /></div>
+    <div className="box"><img src={pablo5} alt='Cake' /></div>
+    <div className="box"><img src={pablo6} alt='Cake' /></div>
     </div>
 </div>
 
