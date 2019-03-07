@@ -4,9 +4,13 @@ import Footer from './Footer';
 import cherish from '../images/cherish.jpg';
 import pablo1 from '../images/pablo(1).jpg';
 import pablo2 from '../images/pablo(2).jpg';
+import pablo3 from '../images/pablo(3).jpg';
 import pablo4 from '../images/pablo(4).jpg';
 import pablo5 from '../images/pablo(5).jpg';
 import pablo6 from '../images/pablo(6).jpg';
+import landscape from '../images/landscape.jpg';
+import ninecakes from '../images/ninecakes.png';
+import caramel from '../images/caramel.jpg';
 
 const Home = () => (
             <div>
@@ -28,10 +32,10 @@ const Home = () => (
     <div className='box item2 e'> <img src={pablo1} alt='Cake' /></div>
     <div className="box item3 f"><img src={pablo2} alt='Cake' /></div>
     <div className="item4">
-    <div className="box g"><img src={cherish} alt='Cake' /></div>
-    <div className="box h"><img src={pablo4} alt='Cake' /></div>
-    <div className="box i"><img src={pablo5} alt='Cake' /></div>
-    <div className="box j"><img src={pablo6} alt='Cake' /></div>
+    <div className="box g"><img src={pablo3} alt='Cake' /></div>
+    <div className="box h"><img src={landscape} alt='Cake' /></div>
+    <div className="box i"><img src={caramel} alt='Cake' /></div>
+    <div className="box j"><img src={ninecakes} alt='Cake' /></div>
     </div>
 </div>
 
@@ -57,7 +61,7 @@ style = {
             </i>
             </span>
            < span className = "drop-cap" >
-                ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                Wedding publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
     <div className='services'>
@@ -67,7 +71,7 @@ style = {
             </i>
             </span>
             < span className = "drop-cap" >
-                ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                Birthday publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
     <div className='services'>
@@ -77,7 +81,7 @@ style = {
             </i>
             </span>
             < span className ="drop-cap">
-                ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                Anniversary publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
     <div className='services'>
@@ -87,7 +91,7 @@ style = {
             </i>
             </span>
             < span className = "drop-cap" >
-                ktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                Cupcakes publishing software like Aldus PageMaker including versions of Lorem Ipsum
          </span>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import MediaQuery from './MediaQuery';
+import Footer from './Footer';
 import Toggle from './Toggle';
 import header from '../images/header.svg';
 import {
