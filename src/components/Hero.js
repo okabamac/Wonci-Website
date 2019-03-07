@@ -27,10 +27,10 @@ const Hero = () => (
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px', height: windowWidth>970 && '100px'}}>
             <ul  className={" " + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={""+(on && "open")}>
-            <li><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Home</NavLink></li >
-            <li><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Gallery</NavLink></li>
-            <li><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Press</NavLink></li>
-            <li><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Contact</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Home</NavLink></li >
+            <li onClick={toggle}><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Gallery</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Press</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Contact</NavLink></li>
          </ul>
        </nav>
        </div>
