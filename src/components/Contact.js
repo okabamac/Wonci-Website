@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MediaQuery from './MediaQuery';
+import Footer from './Footer';
+import 'font-awesome/css/font-awesome.min.css';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -35,10 +37,9 @@ class Contact extends Component {
         <div>
         <MediaQuery>
         {({windowWidth}) =>
-              <div>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
                    <div className='contact' style={{top: windowWidth<=698 && '10px'}}>
-                   <h2>Contact Us</h2>
+                   <h2>Contact Us <i className='fa fa-envelope'></i></h2>
                     <form onSubmit={this.handleSubmit}>
                     <div>
                     <input type='text' name='name' value={this.state.name} onChange={this.handleChange} required />
@@ -73,7 +74,7 @@ class Contact extends Component {
                    </div>
       </form>
                    </div>
-                   </div>
+                   <Footer />
                    </div>
         }
         </MediaQuery>

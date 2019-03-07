@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from './MediaQuery';
+import Footer from './Footer';
 import cherish from '../images/cherish.jpg';
 import pablo1 from '../images/pablo(1).jpg';
 import pablo2 from '../images/pablo(2).jpg';
@@ -11,7 +12,6 @@ const Home = () => (
             <div>
                  <MediaQuery>
         {({windowWidth}) =>
-              <div>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
             <div className='title'>
             <h2>Bee's Treats</h2>
@@ -19,13 +19,19 @@ const Home = () => (
             <hr className="hr" />
             </div>
             <div className="wrapper">
-    <div className="box item1"><img src={pablo1} alt='Cake' /></div>
-    <div className="box item2"><img src={pablo2} alt='Cake' /></div>
-    <div className="item3">
-    <div className="box"><img src={cherish} alt='Cake' /></div>
-    <div className="box"><img src={pablo4} alt='Cake' /></div>
-    <div className="box"><img src={pablo5} alt='Cake' /></div>
-    <div className="box"><img src={pablo6} alt='Cake' /></div>
+    <div className="box item1">
+    <div className="box a"><img src={cherish} alt='Cake' /></div>
+    <div className="box b"><img src={pablo4} alt='Cake' /></div>
+    <div className="box c"><img src={pablo5} alt='Cake' /></div>
+    <div className="box d"><img src={pablo6} alt='Cake' /></div>
+    </div>
+    <div className='box item2 e'> <img src={pablo1} alt='Cake' /></div>
+    <div className="box item3 f"><img src={pablo2} alt='Cake' /></div>
+    <div className="item4">
+    <div className="box g"><img src={cherish} alt='Cake' /></div>
+    <div className="box h"><img src={pablo4} alt='Cake' /></div>
+    <div className="box i"><img src={pablo5} alt='Cake' /></div>
+    <div className="box j"><img src={pablo6} alt='Cake' /></div>
     </div>
 </div>
 
@@ -34,7 +40,7 @@ const Home = () => (
 style = {
     {
         borderBottom: windowWidth <= 970 && '2px solid #664840',
-        borderRight: windowWidth <= 970 && 'none'
+        borderRight: windowWidth <= 970 && 'none', padding: windowWidth <= 698 && '2em'
     }
 } >
 <h3>About Us</h3>
@@ -86,8 +92,9 @@ style = {
     </div>
 </div>
 </div>
+<Footer />
             </div>
-                  </div>
+                  
         }
         </MediaQuery>
              </div>

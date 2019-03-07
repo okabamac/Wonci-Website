@@ -1,8 +1,5 @@
-$primary-color: rgb(41, 79, 109);
-$secondary-color: #41ADE5;
-$red: #F37272;
-$brown: #584E4A;
-$whitey: #f0f0f0;
+$primary-color: #684841;
+$secondary-color: #DE8936;
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 @mixin easeOut {
@@ -34,12 +31,3 @@ $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
     }
 }
 
-@function set-text-color ($color) {
-    @if (lightness($color)>40) {
-        @return $secondary-color;
-    }
-
-    @else {
-        @return $primary-color;
-    }
-}

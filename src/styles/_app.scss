@@ -13,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  scroll-behavior: smooth;
   overflow-x: hidden;
 
   &::before {
@@ -75,7 +76,7 @@ header {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 10%;
-      background: #69b6d5;
+      background: #65413A;
       @include easeOut;
     }
 

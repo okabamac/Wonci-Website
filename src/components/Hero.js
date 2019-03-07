@@ -15,7 +15,7 @@ const Hero = () => (
                         <div>
                           <header>
                         <div classsName='header-div' style={{width: windowWidth>970 && '970px', margin: 'auto'}}>
-                        <p>Bee's Treats</p>
+                        <p style={{paddingLeft: windowWidth<970 && '1em'}}>Bee's Treats</p>
                         <div onClick={toggle} className={"hamburger-icon "+ (on && 'close')} id={"" + (windowWidth >970 && "hide")}>
                         <div className="btn-line line-1"></div>
                         <div className="btn-line line-2"></div>

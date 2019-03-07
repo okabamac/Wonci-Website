@@ -1,13 +1,17 @@
 import React from 'react';
 import MediaQuery from './MediaQuery';
+import Slider from './Slider';
+import Footer from './Footer';
 const Gallery = () => (
       <div>
           <MediaQuery>
         {({windowWidth}) =>
-              <div>
+              
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
+                   <Slider />
+                   <Footer />
                    </div>
-                   </div>
+                   
         }
         </MediaQuery>
       </div>
