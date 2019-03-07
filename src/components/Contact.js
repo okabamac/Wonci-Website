@@ -28,8 +28,17 @@ class Contact extends Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted');
+    alert('Thanks for getting in touch, we will get back to you');
     event.preventDefault();
+    this.setState({
+         name: '',
+         email: '',
+         phone: '',
+         event: '',
+         date: '',
+         location: '',
+         message: ''
+    });
   }
 
   render() {
@@ -39,7 +48,12 @@ class Contact extends Component {
         {({windowWidth}) =>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
                    <div className='contact' style={{top: windowWidth<=698 && '10px'}}>
+                   <div className='contact-details'>
                    <h2>Contact Us <i className='fa fa-envelope'></i></h2>
+                   <p>No. 12 Green Street, Behind Navy Quarters <br />
+                   Kubwa Phase II, Site, Abuja<br/>
+                   +2349059564447, +2349099779460</p>
+                   </div>
                     <form onSubmit={this.handleSubmit}>
                     <div>
                     <input type='text' name='name' value={this.state.name} onChange={this.handleChange} required />

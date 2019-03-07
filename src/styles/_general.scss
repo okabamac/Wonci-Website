@@ -193,19 +193,27 @@
 .contact {
     position: relative;
     width: 100%;
-    top: 60px;
-    padding: 4em;
+    top: 40px;
+    padding: 0 4em 4em 4em;
 
-    h2 {
-        text-align: left;
-        top: 5em;
-        margin-left: .75em; 
-        margin-bottom: 1.5em;
-        i {
-            color: #9c3527;
-        }
+    // h2 {
+    //     text-align: left;
+    //     top: 5em;
+    //     margin-left: .75em; 
+    //     margin-bottom: 1.5em;
+    //     i {
+    //         color: #9c3527;
+    //     }
+    // }
+
+    .contact-details {
+        width: 100%;
+        line-height: 1.5;
+        display: display-block;
     }
     form {
+        top: 20px;
+        position: relative;
         display: grid;
         grid-gap: 2em;
         width: 100%;
@@ -232,6 +240,7 @@
             textarea {
                 width: 95%;
                 height: 10em;
+                font-size: 1.3em;
             }
         }
         input, textarea {
