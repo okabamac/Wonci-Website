@@ -196,20 +196,17 @@
     top: 40px;
     padding: 0 4em 4em 4em;
 
-    // h2 {
-    //     text-align: left;
-    //     top: 5em;
-    //     margin-left: .75em; 
-    //     margin-bottom: 1.5em;
-    //     i {
-    //         color: #9c3527;
-    //     }
-    // }
+ 
 
     .contact-details {
         width: 100%;
         line-height: 1.5;
-        display: display-block;
+        text-align: left;
+       padding: 0 1.5em;
+
+       h2 {
+           margin-bottom: -10px;
+       }
     }
     form {
         top: 20px;
@@ -323,7 +320,7 @@
     top: 100px; 
     max-width: 600px;
     margin: 0 auto;
-    height: 500px;
+    height: 550px;
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 10em;
@@ -331,7 +328,7 @@
 
 .slider-wrapper {
     position: relative;
-    height: 70%;
+    height: 80%;
     width: 100%;
 }
 
@@ -339,11 +336,12 @@
     display: inline-block;
     height: 100%;
     width: 100%;
+    box-shadow: $box-shadow;
 }
 
 .arrow {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,7 +353,7 @@
 
 .nextArrow {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 25px;
     z-index: 5;
     color: #fff;
@@ -363,7 +361,7 @@
 
 .backArrow {
     position: absolute;
-    top: 50%;
+    top:40%;
     left: 25px;
     z-index: 5;
     color: #fff;
@@ -373,3 +371,50 @@
 .fa-arrow-left:before {
     color: #222
 }
+
+.content {
+    position: relative;
+    top: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+
+    .timeline-item {
+        padding: 3em 2em 2em;
+        position: relative;
+        color: black;
+        border-left: 2px solid $border-color;
+
+         p {
+            font-size: 1rem; 
+        }
+        &::before {
+            content: attr(dateIs);
+            position: absolute;
+            left: 2em;
+            font-weight: bold;
+            top: 1em;
+            display: block;
+            font-weight: 700;
+            font-size: 0.785rem;
+        }
+
+        &::after {
+            width: 10px;
+            height: 10px;
+            display: block;
+            top: 1em;
+            position: absolute;
+            left: -7px;
+            border-radius: 10px;
+            content: '';
+            border: 2px solid $border-color;
+            background: white;
+        }
+        &:last-child {
+            border-image: linear-gradient(to bottom, $border-color 60%, rgba($border-color, 0)) 1 100%;
+            margin-bottom: 10em;
+        }
+    }
+}
+ 

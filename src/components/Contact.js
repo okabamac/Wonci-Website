@@ -49,10 +49,10 @@ class Contact extends Component {
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
                    <div className='contact' style={{top: windowWidth<=698 && '10px'}}>
                    <div className='contact-details'>
-                   <h2>Contact Us <i className='fa fa-envelope'></i></h2>
+                   <h2>Contact Us </h2>
                    <p>No. 12 Green Street, Behind Navy Quarters <br />
                    Kubwa Phase II, Site, Abuja<br/>
-                   +2349059564447, +2349099779460</p>
+                   <i className = 'fa fa-phone'></i>+2349059564447, +2349099779460</p >
                    </div>
                     <form onSubmit={this.handleSubmit}>
                     <div>
