@@ -5,7 +5,12 @@ import header from '../images/header.svg';
 import {
   NavLink
 } from 'react-router-dom';
-const Hero = () => (
+const Hero = () => {
+const style = {
+  borderBottom: '3px solid #0EB3CE',
+  borderTop: '3px solid #0EB3CE'
+};
+return (
     <div>
         <MediaQuery>
         {({windowWidth, position}) =>
@@ -26,10 +31,10 @@ const Hero = () => (
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px', height: windowWidth>970 && '100px'}}>
             <ul  className={" " + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={""+(on && "open")}>
-            <li onClick={toggle}><NavLink exact to='/' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Home</NavLink></li >
-            <li onClick={toggle}><NavLink exact to='/gallery' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Gallery</NavLink></li>
-            <li onClick={toggle}><NavLink exact to='/press' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Press</NavLink></li>
-            <li onClick={toggle}><NavLink exact to='/contact' activeStyle={{ borderBottom: '3px solid #0EB3CE', borderTop: '3px solid #0EB3CE' }}>Contact</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/' activeStyle={style}>Home</NavLink></li >
+            <li onClick={toggle}><NavLink exact to='/gallery' activeStyle={style}>Gallery</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/press' activeStyle={style}>Press</NavLink></li>
+            <li onClick={toggle}><NavLink exact to='/contact' activeStyle={style}>Contact</NavLink></li>
          </ul>
        </nav>
        </div>
@@ -43,5 +48,5 @@ const Hero = () => (
           }
         </MediaQuery>
     </div>
-)
+)}
 export default Hero;

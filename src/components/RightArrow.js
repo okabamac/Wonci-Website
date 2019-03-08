@@ -4,7 +4,7 @@ import 'font-awesome/css/font-awesome.min.css';
 const RightArrow = (props) => {
   return (
     <div className="nextArrow arrow" onClick={props.goToNextSlide}>
-      <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+     <i class="fa fa-angle-double-right"></i>
     </div>
   );
 }
