@@ -32,8 +32,6 @@ body {
   }
 }
 
-#Canvas {
-}
 header {
   z-index: 2000;
   position: fixed;
@@ -42,14 +40,23 @@ header {
   top: 0;
   background-color: white;
   box-shadow: $box-shadow;
+  .logo {
+    position: absolute;
+    top: -13px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    right: 15px;
+  }
 
   p {
     font-size: 20px;
     font-family: 'Norican';
   }
+
   .hamburger-icon {
     position: absolute;
-    bottom: 20px;
+    top: -8px;
     right: 30px;
     width: 30px;
     z-index: 5000;

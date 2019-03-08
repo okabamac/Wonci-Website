@@ -2,6 +2,7 @@ import React from 'react'
 import MediaQuery from './MediaQuery';
 import Toggle from './Toggle';
 import header from '../images/header.svg';
+import logo from '../images/logo.jpg';
 import {
   NavLink
 } from 'react-router-dom';
@@ -11,7 +12,6 @@ const style = {
   borderTop: '3px solid #0EB3CE'
 };
 return (
-    <div>
         <MediaQuery>
         {({windowWidth, position}) =>
               <div>
@@ -19,18 +19,19 @@ return (
                         {({on, toggle}) => (
                         <div>
                           <header>
-                        <div classsName='header-div' style={{width: windowWidth>970 && '970px', margin: 'auto'}}>
-                        <p style={{paddingLeft: windowWidth<970 && '1em'}}>Bee's Treats</p>
-                        <div onClick={toggle} className={"hamburger-icon "+ (on && 'close')} id={"" + (windowWidth >970 && "hide")}>
-                        <div className="btn-line line-1"></div>
-                        <div className="btn-line line-2"></div>
-                        <div className="btn-line line-3"></div>
+                        <div style={{width: windowWidth>970 && '970px', height: 'inherit', position: 'relative', margin: 'auto'}}>
+                         <img src={logo} className='logo' alt='logo' style={{display: windowWidth<=970 && 'none'}}/>
+                        <p style={{paddingLeft: windowWidth<970 && '1em',}}>Bee's Treats</p>
+                        <div onClick={toggle} className={'hamburger-icon '+ (on && 'close')} id={'' + (windowWidth >970 && 'hide')}>
+                        <div className='btn-line line-1'></div>
+                        <div className='btn-line line-2'></div>
+                        <div className='btn-line line-3'></div>
                         </div>
                   </div>
               </header>
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px', height: windowWidth>970 && '100px'}}>
-            <ul  className={" " + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={""+(on && "open")}>
+            <ul  className={' ' + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={''+(on && 'open')}>
             <li onClick={toggle}><NavLink exact to='/' activeStyle={style}>Home</NavLink></li >
             <li onClick={toggle}><NavLink exact to='/gallery' activeStyle={style}>Gallery</NavLink></li>
             <li onClick={toggle}><NavLink exact to='/press' activeStyle={style}>Press</NavLink></li>
@@ -47,6 +48,5 @@ return (
                   </div>
           }
         </MediaQuery>
-    </div>
 )}
 export default Hero;
