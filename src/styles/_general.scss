@@ -351,12 +351,13 @@
     border-radius: 50%;
     cursor: pointer;
     transition: transform ease-in .1s;
+    box-shadow: $box-shadow;
 }
 
 .nextArrow {
     position: absolute;
     top: 40%;
-    right: 20px;
+    right: 10px;
     z-index: 5;
     color: #fff;
 }
@@ -364,7 +365,7 @@
 .backArrow {
     position: absolute;
     top:40%;
-    left: 20px;
+    left: 10px;
     z-index: 5;
     color: #fff;
 }
