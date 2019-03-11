@@ -12,8 +12,8 @@
     box-shadow: $box-shadow;
     line-height: 1;
     text-align: center;
-    background: #fff;
-
+    background: $whitey;
+//Home Page CSS
     .title {
         font-family: 'Parisienne', cursive;
         text-align: center;
@@ -92,7 +92,7 @@
     }
 
     .box {
-        color: #fff;
+        color: $whitey;
         border-radius: 5px;
         padding: 10px;
         font-size: 100%; 
@@ -135,7 +135,7 @@
         justify-content: center;
         align-content: center;
     }
-
+//About Section CSS
     .about {
         position: relative;
         margin: auto;
@@ -149,7 +149,7 @@
         text-align: left; 
 
         .vl {
-            border-right: 2px solid #664840;
+            border-right: 2px solid $primary-color;
             padding-right: 1rem;
         }
         .services {
@@ -190,6 +190,7 @@
     }
     
 }
+//Contact Page CSS
 .contact {
     position: relative;
     width: 100%;
@@ -284,6 +285,9 @@
    
 }
 
+
+//Footer CSS
+
  .Footer {
      width: 100%;
      height: 70px;
@@ -314,7 +318,7 @@
         color: rgb(223, 190, 6);
      }
  }
-
+//Gallery Page CSS
 .slider {
     position: relative;
     top: 50px; 
@@ -357,24 +361,24 @@
 .nextArrow {
     position: absolute;
     top: 40%;
-    right: 10px;
+    right: 5px;
     z-index: 5;
-    color: #fff;
+    color: $whitey;
 }
 
 .backArrow {
     position: absolute;
     top:40%;
-    left: 10px;
+    left: 5px;
     z-index: 5;
-    color: #fff;
+    color: $whitey;
 }
 
 .fa-arrow-right:before,
 .fa-arrow-left:before {
-    color: #222
+    color: #333;
 }
-
+//Press Page CSS
 .content {
     position: relative;
     top: 80px;
@@ -418,7 +422,7 @@
             border-radius: 10px;
             content: '';
             border: 2px solid $border-color;
-            background: white;
+            background: $primary-color;
         }
         &:last-child {
             border-image: linear-gradient(to bottom, $border-color 60%, rgba($border-color, 0)) 1 100%;
