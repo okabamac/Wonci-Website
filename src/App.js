@@ -15,11 +15,11 @@ class App extends Component {
         <div>
           <Hero />
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-            <Route exact path={process.env.PUBLIC_URL + '/gallery'} component={Gallery} />
-            <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
-            <Route exact path={process.env.PUBLIC_URL + '/press'} component={Press} />
-            <Route exact path={process.env.PUBLIC_URL + '*'} component={ErrorPage} /> 
+            <Route exact path='/' component={Home} />
+            <Route exact path='/gallery' component={Gallery} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/press' component={Press} />
+            <Route exact path='*' component={ErrorPage} /> 
           </Switch>
         </div>
       </BrowserRouter>
