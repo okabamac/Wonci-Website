@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/main.scss';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Hero from './components/Hero';
 import Home from './components/Home';
 import Gallery from './components/Gallery';
@@ -13,7 +13,7 @@ import ErrorPage from './components/ErrorPage';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
       <div>
        <Hero />
        <Switch>
@@ -21,10 +21,10 @@ class App extends Component {
             <Route exact path={process.env.PUBLIC_URL + '/gallery'} component={Gallery} />
             <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
             <Route exact path={process.env.PUBLIC_URL + '/press'} component={Press} />
-            <Route path={process.env.PUBLIC_URL + '*'} component={ErrorPage} />
+            <Route exact path={process.env.PUBLIC_URL + '*'} component={ErrorPage} />
       </Switch>
       </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
