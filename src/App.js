@@ -11,7 +11,7 @@ import ErrorPage from "./components/ErrorPage";
 class App extends Component { 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <div>
           <Hero />
           <Switch>
