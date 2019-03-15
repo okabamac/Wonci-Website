@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Wonci-Website/static/media/logo.dec1445b.jpg"
   },
   {
-    "revision": "609a83400850835453b1",
+    "revision": "d4548237101261efc979",
     "url": "/Wonci-Website/static/css/main.1b042539.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/Wonci-Website/static/media/bodyback.1b7f50e9.svg"
   },
   {
-    "revision": "701bb205b05694611503",
-    "url": "/Wonci-Website/static/js/2.701bb205.chunk.js"
+    "revision": "088011830f9afa2fd3dd",
+    "url": "/Wonci-Website/static/js/2.08801183.chunk.js"
   },
   {
     "revision": "808fdea786c31ac40bb4128a939a01b5",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/Wonci-Website/static/media/header.e98023c7.svg"
   },
   {
-    "revision": "609a83400850835453b1",
-    "url": "/Wonci-Website/static/js/main.609a8340.chunk.js"
+    "revision": "d4548237101261efc979",
+    "url": "/Wonci-Website/static/js/main.d4548237.chunk.js"
   },
   {
     "revision": "45cb0d1208fa61eba6ac58f604e8fcba",
@@ -92,11 +92,11 @@ self.__precacheManifest = [
     "url": "/Wonci-Website/static/media/caramel.74dd94ad.jpg"
   },
   {
-    "revision": "701bb205b05694611503",
+    "revision": "088011830f9afa2fd3dd",
     "url": "/Wonci-Website/static/css/2.332bdb31.chunk.css"
   },
   {
-    "revision": "b6c460c317a342193cbca22e9fb2b36b",
+    "revision": "ebb8f5a54cce6466205e15625cdb7405",
     "url": "/Wonci-Website/index.html"
   }
 ];
