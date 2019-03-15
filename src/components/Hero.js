@@ -32,7 +32,7 @@ return (
               <div className='Navigation'>
                    <nav style={{width: windowWidth>970 && '970px', height: windowWidth>970 && '100px'}}>
             <ul  className={' ' + (windowWidth >970? 'horizontal '+(position>30 && 'show-horizontal') : 'vertical')} id={''+(on && 'open')}>
-            <li onClick={toggle}><NavLink exact to={process.env.PUBLIC_URL + '/'} activeStyle={style}>Home</NavLink></li >
+            <li onClick={toggle}><NavLink exact to='/' activeStyle={style}>Home</NavLink></li >
             <li onClick={toggle}><NavLink exact to={process.env.PUBLIC_URL + '/gallery'} activeStyle={style}>Gallery</NavLink></li>
             <li onClick={toggle}><NavLink exact to={process.env.PUBLIC_URL + '/press'} activeStyle={style}>Press</NavLink></li>
             <li onClick={toggle}><NavLink exact to={process.env.PUBLIC_URL + '/contact'} activeStyle={style}>Contact</NavLink></li>
