@@ -29,6 +29,11 @@ body {
     width: 100%;
     will-change: transform;
     z-index: -1;
+    animation: grow 15000ms ease;
+  }
+  @keyframes grow {
+    0%{transform: scale(1)};
+    100%{transform: scale(1.5)}; 
   }
 }
 
