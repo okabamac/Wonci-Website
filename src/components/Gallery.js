@@ -7,7 +7,7 @@ const Gallery = () => (
           <MediaQuery>
         {({windowWidth}) =>
               
-                   <div className='Container' style={{width: windowWidth>970 && '970px'}}>
+                   <div className='Container' style={{width: windowWidth>970 && '970px', marginTop: windowWidth<698 && '-80px'}}>
                    <Slider />
                    <Footer />
                    </div>

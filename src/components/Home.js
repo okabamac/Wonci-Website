@@ -17,7 +17,7 @@ const Home = () => (
                  <MediaQuery>
         {({windowWidth}) =>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
-            <div className='title'>
+            <div className='title' style={{marginTop: windowWidth<698 && '-100px'}}>
             <h2>Bee's Treats</h2>
             <p>We speak standard</p>
             <hr className="hr" />
@@ -44,7 +44,7 @@ const Home = () => (
 style = {
     {
         borderBottom: windowWidth <= 970 && '2px solid #664840',
-        borderRight: windowWidth <= 970 && 'none', padding: windowWidth <= 698 && '2em'
+        borderRight: windowWidth <= 970 && 'none', padding: windowWidth <= 698 && '2em 1em 0 1em'
     }
 } >
 <h3>About Us</h3>

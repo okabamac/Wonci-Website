@@ -47,7 +47,7 @@ class Contact extends Component {
         <MediaQuery>
         {({windowWidth}) =>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
-                   <div className='contact' style={{top: windowWidth<=698 && '10px'}}>
+                   <div className='contact' style={{top: windowWidth<=698 && '-80px', padding: windowWidth <698 && '0 1em'}}>
                    <div className='contact-details'>
                    <h2>Contact Us </h2>
                    <p>No. 12 Green Street, Behind Navy Quarters <br />

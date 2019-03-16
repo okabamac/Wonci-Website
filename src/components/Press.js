@@ -9,7 +9,7 @@ const Press = () => {
         {({windowWidth}) =>
               
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
-                   <div className='content'>
+                   <div className='content' style={{marginTop: windowWidth<698 && '-80px'}}>
     <div className='timeline-item' nameIs='Julia Roberts'>
     <img src={kheigl} className='pressImage' alt='people' />
     <p>lorem ips i sssooos soosn o pppf fppfff iiif oof oofoffof
