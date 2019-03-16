@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Wonci-Website/precache-manifest.f769f32cea3ea58f8c3b6cfe72657417.js"
+  "/Wonci-Website/precache-manifest.965411c3829e3336c04ef272a7d8a6ea.js"
 );
 
 workbox.clientsClaim();
